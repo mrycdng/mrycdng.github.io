@@ -1,47 +1,83 @@
- body{
-    background-color:#ebe9e9;
+ body {
+     background-color: #ebe9e9;
  }
+
+ main {
+     max-width: 65%;
+     min-width: 20%;
+     padding: 1rem;
+     margin-left: 30%;
+ }
+
+/* nav {
+    box-sizing:border-box;
+    background-color:#ebe9e9;
+    max-width:40%;
+    min-width:10%;
+    padding:1rem;
+    position:fixed;
+    left:5px;
+    font-family:'Courier New', Courier, monospace;
+ } */
+ .navigation{
+    box-sizing:border-box;
+    font-family:'Courier New', Courier, monospace;
+    max-width:30%;
+    min-width:10%;
+    padding:1rem;
+    position:fixed;
+    left:2%;
+    color:#73628A;
+ }
+ .navigation-primary{
+    font-size:18px;
+ }
+ .navigation-secondary{
+    font-size:16px;
+ }
+
  p {
      font-size: 18px;
      font-family: 'Courier New', Courier, monospace;
-     max-width: 55%;
-     min-width: 20%;
-     margin-left:10%;
  }
 
- h1{
-    font-size:30px;
-    font-family:'Lucida Sans', Verdana, sans-serif;
-    color:#20597e;
+ h1 {
+     font-size: 24px;
+     font-family:'Courier New', Courier, monospace;
+     color: black;
  }
 
  h2 {
-     font-size: 24px;
-     font-family:'Lucida Sans', Verdana, sans-serif;
-     color: #4a639c;
-     max-width: 60%;
-     min-width: 20%;
-     margin-left:2%;
+     font-size: 22px;
+     font-family: 'Courier New', Courier, monospace;
+     color: #73628A;
  }
 
  h3 {
-     font-size: 20px;
-     font-family:'Lucida Sans', Verdana, sans-serif;
+     font-size: 18px;
+     font-family: 'Courier New', Courier, monospace;
      color: #73628A;
-     max-width: 60%;
-     min-width: 20%;
-     margin-left:5%;
 
  }
 
  .highlighted {
      background-color: #a694bf;
-     color:#EAEAEA
+     color: #ebe9e9;
  }
 
  img {
-     max-width: 60%;
-     min-width: 20%;
-     margin-left:5%;
-    border:2px solid #a694bf;
+     display: block;
+     box-sizing: border-box;
+     max-width: 100%;
+     padding: 2rem;
+     border: 1px solid #a694bf;
+     margin-top: 4%;
+     margin-bottom: 4%;
+ }
+
+ .navigation a{
+    color:#73628A;
+ }
+ .navigation a:hover{
+    color:black;
  }
