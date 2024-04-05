@@ -1,0 +1,207 @@
+        body {
+            background-repeat:no-repeat;
+            background-attachment: fixed;
+            background-image: linear-gradient(0deg, rgba(115, 147, 173, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(115, 147, 173, 1) 100%);
+        }
+
+        h1 {
+            text-align: center;
+            color: rgba(115, 147, 173, 1);
+            position:sticky;
+            top:0px;
+            text-shadow:1px 1px 1px rgba(255, 255, 255, 0.2);
+        }
+
+        h2 {
+            text-align: center;
+            position: relative;
+            color: rgba(115, 147, 173, 1);
+            top: 10px;
+
+        }
+
+        main {
+            text-align: center;
+            position: relative;
+            top: 10px;
+            color: rgba(115, 147, 173, 1);
+
+
+        }
+
+        .normal_body {
+            max-width: 10%;
+            min-width: 10%;
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        .big_body {
+            max-width: 10%;
+            min-width: 10%;
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 22px;
+        }
+
+        .huge_body {
+            max-width: 10%;
+            min-width: 10%;
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 30px;
+            font-style: italic;
+        }
+
+        .z_body {
+            display: inline-block;
+            max-width: 80%;
+            min-width: 40%;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            filter: blur(0);
+            color: white;
+            text-shadow:1px 1px 1px rgba(115, 147, 173, 0.5);
+            border-radius: 10px;
+            margin-bottom: 20px;
+            
+        }
+        #z0 {
+            position: sticky;
+            top: 30px;
+        }
+        #z1 {
+            position: sticky;
+            top: 60px;
+        }
+
+        #z2 {
+            position: sticky;
+            top: 90px;
+        }
+
+        #z3 {
+            position: sticky;
+            top: 120px;
+        }
+        #z4 {
+            position: sticky;
+            top: 150px;
+        }
+        #z5 {
+            position: sticky;
+            top: 180px;
+        }
+        #z6 {
+            position: sticky;
+            top: 210px;
+        }
+        #z7 {
+            position: sticky;
+            top: 240px;
+        }
+        #z8 {
+            position: sticky;
+            top: 270px;
+        }
+        #z9 {
+            position: sticky;
+            top: 300px;
+        }
+        #z10 {
+            position: sticky;
+            top: 330px;
+        }
+        #z11 {
+            position: sticky;
+            top: 360px;
+        }
+        #z12 {
+            position: sticky;
+            top: 390px;
+        }
+        #z13 {
+            position: sticky;
+            top: 420px;
+        }
+        #z14 {
+            position: sticky;
+            top: 450px;
+        }
+        #z15 {
+            position: sticky;
+            top: 480px;
+        }
+        #z16 {
+            position: sticky;
+            top: 510px;
+        }
+        #z17 {
+            position: sticky;
+            top: 540px;
+        }
+        #z18 {
+            position: sticky;
+            top: 570px;
+        }
+        #z19 {
+            position: sticky;
+            top: 600px;
+        }
+        #z20 {
+            position: sticky;
+            top: 630px;
+        }
+        #z21 {
+            position: sticky;
+            top: 660px;
+        }
+
+        #z22 {
+            position: sticky;
+            top: 690px;
+        }
+        #z23 {
+            position: sticky;
+            top: 720px;
+        }
+
+        p {
+            filter: blur(5px);
+        }
+
+        p:hover {
+            filter: blur(0);
+        }
+
+        li {
+            filter: blur(5px);
+        }
+
+        li:hover {
+            filter: blur(0);
+        }
+
+        .back2top{
+            max-width: 10%;
+            min-width: 10%;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            color: white;
+            filter:blur(0);
+        }
+
+        a:link {
+            color: white;
+        }
+
+        a:visited {
+            color:white;
+        }
+        
