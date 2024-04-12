@@ -1,0 +1,134 @@
+/* Colors */
+:root {
+    --bg_color: aliceblue;
+    --text_color: navy;
+    --primary_color: blue;
+    --secondary_color: teal;
+}
+
+/* importing fonts */
+@font-face {
+    font-family: 'sprat';
+    src: url(../fonts/SpratVF.woff2);
+}
+
+/* set background color */
+body {
+    background-color: var(--bg_color);
+    color: var(--text_color);
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    align-items:flex-start;
+}
+
+/* set characteristics of article paragraphs */
+main {
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+/* set characteristics of navigation/table of contents */
+.navigation {
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 1rem;
+    /* color:#73628A; */
+    color: var(--secondary_color);
+
+    display: none;
+}
+
+.navigation-primary {
+    font-size: 18px;
+}
+
+.navigation-secondary {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    /* color: black; */
+    color: var(--primary_color);
+}
+
+h2 {
+    font-size: 22px;
+    font-family: 'Courier New', Courier, monospace;
+    /* color: #73628A; */
+    color: var(--secondary_color);
+}
+
+h3 {
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #73628A;
+    color: var(--text_color);
+
+}
+
+p {
+    font-size: 18px;
+    font-family: 'sprat', serif;
+    font-stretch: narrower;
+    font-weight: 100;
+}
+
+
+/* set characteristics of highlighted text */
+.highlighted {
+    background-color: #a694bf;
+    color: #ebe9e9;
+}
+
+/* changes images to border boxes and sets characteristics */
+img {
+    display: block;
+    box-sizing: border-box;
+    max-width: 100%;
+    padding: 2rem;
+    /* border: 1px solid #a694bf; */
+    border: 1px solid var(--primary_color);
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.navigation a {
+    /* color:#73628A; */
+    color: var(--primary_color);
+}
+
+.navigation a:hover {
+    /* color:black; */
+    color: var(--secondary_color);
+}
+
+/* media queries */
+/*tell medium screens to show navigation but at the bottom*/
+@media screen and (min-width:600px) {
+
+    .navigation {
+        display: block;
+        order: 2;
+    }
+
+    main {
+        order: 1;
+    }
+}
+/*tell large screens to show navigation at the left alongside the body*/
+@media screen and (min-width:1000px) {
+
+    .navigation {
+        order: 1;
+        flex-basis:300px;
+        position:sticky;
+    }
+
+    main {
+        order: 2;
+        flex-basis:calc(100% - 300px - 20px);
+    }
+}

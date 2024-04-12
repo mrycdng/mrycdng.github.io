@@ -34,7 +34,7 @@ p{
     font-family:neue_montreal_thin;
     font-size:20px;
     color:grey;
-    position:sticky;
+    /* position:sticky; */
     top:120px;
     text-align:left;
     margin-left:250px;
