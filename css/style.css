@@ -14,7 +14,7 @@
 @font-face {
     font-family: 'ortica';
     src: url("../fonts/OrticaLinear-Bold.woff2");
-    font-style: bold_linear;
+    font-style:normal;
 }
 
 @font-face {

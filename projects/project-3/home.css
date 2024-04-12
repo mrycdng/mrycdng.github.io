@@ -1,0 +1,93 @@
+@font-face {
+    font-family: neue_montreal_bold;
+    font-style:normal;
+    src: url(fonts/PPNeueMontreal-Medium.otf);
+}
+@font-face {
+    font-family:neue_montreal_thin;
+    font-style:normal;
+    src:url(fonts/PPNeueMontreal-Thin.otf);
+
+}
+
+h1{
+    font-family:neue_montreal_bold;
+    font-size:90px;
+    text-align: center;
+    position:sticky;
+    top:5px;
+    color:grey;
+
+}
+
+p{
+    font-family:neue_montreal_thin;
+    font-size:20px;
+    color:grey;
+    text-align:center;
+    position:sticky;
+    top:120px;
+
+    margin-left:250px;
+    margin-right:250px;
+}
+body {
+    background-color: rgb(235, 234, 226);
+    margin:auto;
+}
+
+.grid {
+    /* display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows:auto;
+    justify-items: center;
+    align-items: center;
+    grid-gap: 300px; */
+
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.pc {
+    flex-basis: 22%;
+    border-style: hidden;
+    background-color: transparent;
+    margin:5px;
+    /* width:100%;
+    height:100%; */
+    /* perspective: 1000px; */
+    height:auto;
+}
+
+.pc_inner {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+}
+
+.pc:hover .pc_inner {
+    transform: rotateY(180deg);
+}
+
+.pc_front,
+.pc_back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.pc_front {
+    /* background-color: #bbb;
+    color: black; */
+}
+
+.pc_back {
+    /* background-color: #222e36ef;
+    color: white; */
+    transform: rotateY(180deg);
+}

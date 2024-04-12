@@ -1,0 +1,46 @@
+@font-face {
+    font-family: neue_montreal_bold;
+    font-style:normal;
+    src: url(fonts/PPNeueMontreal-Medium.otf);
+}
+@font-face {
+    font-family:neue_montreal_thin;
+    font-style:normal;
+    src:url(fonts/PPNeueMontreal-Thin.otf);
+
+}
+
+h1{
+    font-family:neue_montreal_bold;
+    font-size:90px;
+    text-align: center;
+    position:sticky;
+    top:5px;
+    color:grey;
+
+}
+
+.flex {
+    display:flex;
+    justify-content: center;
+
+}
+
+img {
+    width:40%;
+    margin:10px;
+}
+p{
+    font-family:neue_montreal_thin;
+    font-size:20px;
+    color:grey;
+    position:sticky;
+    top:120px;
+    text-align:left;
+    margin-left:250px;
+    margin-right:250px;
+}
+body {
+    background-color: rgb(235, 234, 226);
+    margin:auto;
+}

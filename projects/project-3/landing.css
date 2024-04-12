@@ -1,0 +1,112 @@
+@font-face {
+    font-family: neue_montreal_bold;
+    font-style:normal;
+    src: url(fonts/PPNeueMontreal-Medium.otf);
+}
+@font-face {
+    font-family:neue_montreal_thin;
+    font-style:normal;
+    src:url(fonts/PPNeueMontreal-Thin.otf);
+
+}
+
+body {
+    background-color: rgb(235, 234, 226);
+}
+
+.landing_card {
+    width: 60rem;
+    height: 40rem;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    /* perspective: 3000px; */
+}
+
+.landing_card_inner {
+    background-color: rgb(248, 248, 248);
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    /* transform-origin: center right; */
+}
+
+.landing_card:hover .landing_card_inner {
+    /* transform: translateX(-100%) rotateY(-180deg); */
+    transform: rotateY(-180deg);
+}
+
+.landing_card_front,
+.landing_card_back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+.landing_card_front {
+    background-color: rgb(248, 248, 248);
+}
+
+.landing_card_back {
+    background-color: rgb(248, 248, 248);
+    transform: rotateY(180deg);
+    text-align:center;
+}
+
+.landing_card_back_text {
+    position:relative;
+    top:30%;
+    text-align:center;
+    font-family: neue_montreal_bold;
+    font-size:90px;
+    color:rgb(248, 248, 248);
+    text-decoration: none;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: grey;
+    transition: 1s ease;
+}
+
+p.landing_card_back_text {
+    width:50%;
+    text-align:center;
+    margin:auto;
+    font-family:neue_montreal_thin;
+    font-size:20px;
+    position:relative;
+    top:50%;
+    color:grey;
+}
+
+.landing_card_back_text:hover {
+    color:rgb(235, 234, 226);
+}
+
+
+hr {
+    width: 70%;
+    margin-left: 4%;
+    margin-bottom: 5%;
+}
+
+#lines {
+    position: relative;
+    top: 42%;
+    left: 3%;
+}
+
+#stamp {
+    width: 6rem;
+    height: 8rem;
+    border: 1px solid grey;
+    position: relative;
+    top: -50%;
+    left: 86%;
+}
