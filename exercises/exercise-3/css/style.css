@@ -1,3 +1,8 @@
+ @font-face {
+    font-family:'sprat';
+    src: url(../fonts/SpratVF.woff2);
+ }
+ 
  /* set background color */
  body {
      background-color: #ebe9e9;
@@ -29,12 +34,6 @@
     font-size:16px;
  }
 
-
- p {
-     font-size: 18px;
-     font-family: 'Courier New', Courier, monospace;
- }
-
  h1 {
      font-size: 24px;
      font-family:'Courier New', Courier, monospace;
@@ -53,6 +52,14 @@
      color: #73628A;
 
  }
+
+ p {
+    font-size: 18px;
+    font-family: 'sprat', serif;
+    font-stretch:narrower;
+    font-weight:100;
+}
+
 
  /* set characteristics of highlighted text */
  .highlighted {

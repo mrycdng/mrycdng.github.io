@@ -1,0 +1,118 @@
+/* fonts */
+@font-face {
+    font-family: 'ortica';
+    src: url("../fonts/OrticaLinear-Regular.woff2");
+    font-style: regular;
+}
+
+@font-face {
+    font-family: 'ortica';
+    src: url("../fonts/OrticaLinear-Light.woff2");
+    font-style: light;
+}
+
+@font-face {
+    font-family: 'ortica';
+    src: url("../fonts/OrticaLinear-Bold.woff2");
+    font-style: bold_linear;
+}
+
+@font-face {
+    font-family: 'ortica';
+    src: url("../fonts/OrticaAngular-Bold.woff2");
+    font-style: bold_angular;
+}
+
+/* google fonts embed */
+.yarndings-12-regular {
+    font-family: "Yarndings 12", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@keyframes tracking {
+    0% {
+        letter-spacing: 0;
+        color: rgb(246, 230, 249);
+    }
+
+    100% {
+        letter-spacing: 10px;
+        color: aliceblue;
+    }
+}
+
+header {
+    flex-basis: 75%;
+    flex-grow: 1;
+    background-image: linear-gradient(0deg, white 0%, skyblue 100%);
+    /* border: 1px solid cornflowerblue; */
+    padding: 2rem;
+    font-family: ortica;
+    font-style: bold_angular;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: aliceblue;
+    text-shadow: 2px 2px 6px skyblue;
+}
+
+/* h1 {
+    animation: tracking 2s ease infinite alternate;
+} */
+
+main {
+    flex-basis: 100%;
+    flex-grow: 1;
+}
+
+section {
+    /* border: 1px solid slateblue; */
+    padding: 2rem;
+    background-image: linear-gradient(0deg, white 0%, skyblue 100%);
+    flex-basis: 100%;
+}
+
+section>h2 {
+    font-family: ortica;
+    font-style: regular;
+    font-size: 22px;
+    color: aliceblue;
+    text-shadow: 1px 1px 3px skyblue;
+}
+
+.list_container {
+    list-style: none;
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.list_item {
+    flex-basis: 100%;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Courier New', Courier, monospace;
+    /* filter:opacity(0); */
+    transition: filter 1s ease;
+
+}
+
+.list_item:hover {
+    /* filter: opacity(100); */
+    background-image: linear-gradient(90deg, rgb(240, 248, 255) 0%, rgb(240, 248, 255, 0) 70%);
+}
+
+a {
+    width: 100%;
+    display: inline-block;
+    padding: 2rem;
+}
