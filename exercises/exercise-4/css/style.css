@@ -22,6 +22,16 @@ body {
     align-items:flex-start;
 }
 
+body.light {
+    background:lightgoldenrodyellow;
+    color:darkslateblue;
+}
+
+body.dark {
+    background:darkslateblue;
+    color:lightgoldenrodyellow;
+
+}
 /* set characteristics of article paragraphs */
 main {
     padding: 1rem;
