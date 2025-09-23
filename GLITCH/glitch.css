@@ -28,10 +28,9 @@ p {
 
 
 .center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height:100vh;
+    position:block;
+    margin:auto;
+    padding-top:5%;
 
     
 }
