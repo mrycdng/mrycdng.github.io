@@ -3,7 +3,7 @@ html, body {
     padding: 0;
     background-color:blue;
     overflow:hidden;
-    cursor: url('/GLITCH/left_right_cursor.png'), pointer;
+    cursor: url('/GLITCH/left_right_cursor.png');
 
   }
 
