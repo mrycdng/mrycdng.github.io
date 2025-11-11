@@ -1,0 +1,206 @@
+@font-face {
+  font-family: gaisyr; 
+  src: url(ABCGaisyr-RegularItalic.otf); 
+}
+
+@font-face {
+  font-family: monument-grotesk;
+  src: url(ABCMonumentGrotesk-Medium.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #0000ff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(food4thought.png);
+    background-size: cover;                  
+    background-repeat: no-repeat;
+    background-position: center center; 
+  }
+  
+  #next-button {
+    position:absolute;
+    top:690px;
+    left:120px;
+    margin: 20px;
+    padding: 10px 20px;
+    font-family: monument-grotesk;
+    font-size: 30px;
+    background-color: #c3c3e9;
+    color: black;
+    border-width: 1px;
+    border-color: black;
+    /* border-radius: 8px; */
+    cursor: pointer;
+    transition: background 0.2s;
+    z-index:1;
+  }
+  
+  #next-button:hover {
+    background-color: #9393b0;
+  }
+
+  #day-text {
+    position:absolute;
+    top:650px;
+    left:125px;
+    font-family: monument-grotesk;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    
+  }
+  
+
+  #tabletop {
+    position:absolute;
+    top:44px;
+    left:595px;
+    width: 700px;
+    height: 675px;
+    /* overflow: hidden; */
+  }
+  
+  .ketch {
+    position: absolute;
+    border-radius: 50%;
+    background-color: red;
+    border: 1px solid black;
+  }
+
+  .egg, .egg2Y, .egg3Y {
+    position: absolute;
+    width: 314px;  
+    height: 255px; 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform-origin: center center;
+  }
+  
+  .sausage {
+    position:absolute;
+    width: 514px;
+    height:56px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform-origin: center center;
+  }
+
+  .toast {
+    position:absolute;
+    width: 350px;
+    height:350px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform-origin: center center;
+
+  }
+
+  .coffee {
+    position:absolute;
+    width: 649px;
+    height:216px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform-origin: center center;
+  }
+
+  .hair {
+    position:absolute;
+    width: 414px;
+    height: 237px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform-origin: center center;
+  }
+
+  .cheese {
+    position:absolute;
+    width: 414px;
+    height: 237px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform-origin: center center;
+  }
+
+  .fish {
+    position:absolute;
+    width: 894px;
+    height: 194px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform-origin: center center;
+  }
+
+  .sludge {
+    position:absolute;
+    width: 587px;
+    height: 302px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform-origin: center center;;
+  }
+
+  .shell {
+    position:absolute;
+    width: 882px;
+    height: 647px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform-origin: center center;;
+  }
+
+  #item {
+    position: absolute;
+    display:block;
+    margin:auto;
+    text-align:center;
+    width:290px;
+    top: 60px;
+    left:37px;
+  }
+
+  #item-energy {
+    position:absolute;
+    top:92px;
+    left:155px;
+  }
+
+  #item, #item-energy {
+
+    font-family: monument-grotesk;
+    font-size: 30px;
+
+  }
+  #fortune{
+    position: fixed;      
+    left: 54px;
+    top: 170px;
+    margin:auto;
+    font-family: gaisyr;
+    color: black;
+    width:260px;
+    text-align: center;
+    font-size: 32px;
+    line-height:40px;
+    pointer-events: none;   
+    opacity: 0;             
+    transition: opacity 0.2s ease;
+  }
+
+
+  
+
