@@ -1,0 +1,293 @@
+@font-face {
+    font-family: 'timezone';
+    src: url("HALTimezone-Regular.ttf");
+    font-style: regular;
+}
+
+@font-face {
+    font-family: 'timezone';
+    src: url("HALTimezone-RegularItalic.ttf");
+    font-style: italic;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+
+    background-color:#b5c3eb;
+    color:blue;
+
+    font-family:timezone;
+}
+
+#header_inner {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    width:96vw;
+    margin:auto;
+    text-align:center;
+    font-size: 14px;
+    text-transform: uppercase;
+    flex: 1;
+    line-height:30px;
+    transition: 0.25s ease;
+    overflow: hidden;
+}
+
+.header_inner::after {
+    content: "Remixing Maggie Nelson’s Bluets using various palettes of blues.";
+    /* color:#b5c3eb; */
+    opacity:0;
+    transition: 0.25s ease;
+}
+
+.header_inner:hover #title {
+    opacity:0;
+}
+
+.header_inner:hover::after {
+    opacity: 1;
+}
+
+#about {
+    display:none;
+    font-size: 14px;
+    text-transform: uppercase;
+    
+}
+
+/* .header:hover {
+    background-color:blue;
+    color:#b5c3eb;
+    transition: opacity 0.25s ease;
+} */
+
+#title {
+    
+}
+
+.container {
+    display: flex;
+    flex-direction:row;
+    width:100vw;
+    /* height:84vh; */
+    flex:8.6;
+    overflow:scroll;
+
+    border-top: 1px solid blue;
+}
+
+.nav {
+    display: flex;
+    box-sizing:border-box;
+    flex-direction:row;
+    width:100vw;
+    flex:0.4;
+
+    align-items: center; 
+    justify-content: center;
+
+    border-top: 1px solid blue;
+
+}
+
+#og_nav {
+    display:flex;
+    flex-direction:row;
+    gap: .5vh;
+    padding:1vh 3vw;
+    
+    overflow: auto;
+    width:50%;
+    
+    
+}
+
+#remix_nav {
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    gap: .5vh;
+    padding:1vh 3vw;
+    line-height:1vh;
+
+
+    overflow: auto;
+    width:50%;
+}
+
+.container > * {
+    min-width: 0; 
+  }
+
+
+
+#og {
+    box-sizing:border-box;
+    font-size: 3vw;
+
+
+    padding: 1vh 3vw;
+
+    flex: 1;
+    overflow: auto;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    border-right:.9px solid blue;
+   
+}
+
+#og > * {
+    min-width: 0;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+
+/* #og:hover{
+    flex-grow:3;
+    transition: 0.25s ease;
+} */
+
+
+#remix {
+    box-sizing:border-box;
+    
+    font-size: 3vw;
+    
+    padding: 1vh 3vw;
+
+    flex: 1;
+    overflow: auto;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    border-left:.9px solid blue;
+}
+
+#remix > * {
+    min-width: 0;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+
+/* #remix:hover {
+    flex-grow: 3;
+    transition: 0.25s ease;
+} */
+
+#og:hover {
+    background-color:blue;
+    color:#b5c3eb;
+    transition: 0.25s ease;
+}
+#og:hover .bluetag {
+    background-color:#b5c3eb;
+    color:blue;
+    transition: 0.25s ease;
+}
+#remix:hover {
+    background-color:blue;
+    color:#b5c3eb;
+    transition: 0.25s ease;
+}
+#remix:hover .bluetag {
+    background-color:#b5c3eb;
+    color:blue;
+    transition: 0.25s ease;
+}
+
+.og_text {
+    display:none;
+    margin:auto;
+}
+
+#remix_text {
+    margin:auto;
+    
+}
+
+.bluetag {
+    font-style:italic;
+    background-color: blue;
+    color:#b5c3eb;
+    padding: 2px 4px;
+}
+
+
+button {
+    background-color: #b5c3eb;
+    color:blue;
+    border: 1px solid blue;
+
+    text-transform: uppercase;
+    font-size:14px;
+
+    font-family:timezone;
+    
+}
+
+button:hover {
+    background-color:blue;
+    color:#b5c3eb;
+    transition: 0.25s ease;
+}
+
+/* .header:hover #index_btn {
+    background:blue;
+    color: #b5c3eb;
+    transition: 0.25s ease;
+    border: 1px solid #b5c3eb;
+} */
+
+/* .header:hover a {
+    color:#b5c3eb;
+    transition: 0.25s ease;
+} */
+/* #index_btn:hover {
+    color: #b5c3eb;
+    transition: 0.25s ease;
+    border: 1px solid #b5c3eb;
+} */
+
+/* a:hover #index_btn {
+    background:#b5c3eb;
+    color:blue;
+    border: 1px solid blue;
+    transition: 0.25s ease;
+} */
+
+
+#hide_btn {
+    opacity:0%;
+}
+
+#og_text_0 {
+    display:block;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a {
+    color:blue;
+    text-decoration:none;
+}
+
+a:hover {
+    color:#b5c3eb;
+}
+
