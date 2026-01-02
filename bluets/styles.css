@@ -27,7 +27,7 @@ body {
     display: flex;
     align-items: center; 
     justify-content: space-between;
-    width:96vw;
+    width:94vw;
     margin:auto;
     text-align:center;
     font-size: 14px;
@@ -36,6 +36,7 @@ body {
     line-height:30px;
     transition: 0.25s ease;
     overflow: hidden;
+    
 }
 
 .header_inner::after {
@@ -244,6 +245,16 @@ button:hover {
     color:#b5c3eb;
     transition: 0.25s ease;
 }
+
+#hide_btn {
+    color:blue;
+}
+
+/* #hide_btn:hover {
+    color:blue;
+    background-color:#b5c3eb;
+} */
+
 
 #og_text_0 {
     display:block;

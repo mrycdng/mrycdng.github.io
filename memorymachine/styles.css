@@ -1,0 +1,601 @@
+@font-face {
+    font-family: 'waxwing';
+    src: url("Waxwing-Regular.ttf");
+    font-style: regular;
+}
+
+body {
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    align-items: center;
+}
+
+.nav {
+    height: 5vh;
+    line-height: 5vh;
+    text-align: center;
+}
+
+#wrapper {
+    background-color: #a1a1a1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+
+
+
+.leftright {
+    background-color: #00ff64;
+    width: 5vw;
+    height: 100%;
+    text-align: center;
+    line-height: 100vh;
+    flex-direction: row;
+    z-index: 999;
+}
+
+#left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#left-arrow {
+    margin: auto;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 35vh 2.5vw 35vh 0;
+    border-color: transparent #a1a1a1 transparent transparent;
+    background: none;
+
+}
+
+#left-arrow:hover {
+    background: none;
+    border-width: 38.5vh 2.8vw 38.5vh 0;
+    transition: 0.5s;
+}
+
+
+#right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#right-arrow {
+    margin: auto;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 35vh 0 35vh 2.5vw;
+    border-color: transparent transparent transparent #a1a1a1;
+    background: none;
+}
+
+#right-arrow:hover {
+    background: none;
+    border-width: 38.5vh 0 38.5vh 2.8vw;
+    transition: 0.5s;
+}
+
+.main {
+    background-color: #a1a1a1;
+    width: 90vw;
+    height: 100vh;
+    display: block;
+    overflow: scroll;
+    z-index:0;
+    background-size: cover;
+    width:90vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.5s;
+}
+
+#main-1 {
+    background-image: url("/memorymachine/mm-bg/mm-bg-1.png");  
+}
+
+#main-2 {
+    background-image: url("/memorymachine/mm-bg/mm-bg-2.png");  
+}
+
+#main-3 {
+    background-image: url("/memorymachine/mm-bg/mm-bg-3.png");  
+}
+
+.main::before {
+    content: "";
+    background-color: #a1a1a1;
+    position: absolute;
+    width: 90vw;
+    height: 100%;
+    opacity: .25;
+    /* mix-blend-mode: luminosity; */
+    z-index: 1;
+}
+
+
+.pair-box {
+    background-size: cover;
+    background-position: center;
+    display: block !important;
+    background-position: center;
+    background-size: cover;
+
+    position: absolute;
+
+    border: 1px solid #00ff64;
+    width: 38vw;
+    height: 36vh;
+    font-family: Waxwing;
+    color: #00ff64;
+    font-size: 1vw;
+    word-spacing: -.2vw;
+    text-align: justify;
+    text-justify: inter-word;
+    text-align-last: center;
+    text-transform: uppercase;
+    padding: 0.2vw;
+    word-wrap: break-word;
+    line-height: 2vh;
+    display: flex;
+    overflow: scroll;
+
+    z-index: 3;
+
+}
+
+
+.pair-box:hover {
+    z-index: 10;
+    transform: scale(1.03, 1.03);
+    transition: transform 0.5s ease;
+}
+
+a {
+    text-decoration: none;
+    color: #00ff64;
+    /* opacity:0; */
+
+}
+
+a:hover {
+    background: #a1a1a1;
+    /* color:#a1a1a1; */
+    transition: 0.2s ease;
+}
+
+#scroll {
+    color: transparent;
+    left:50vw;
+    width: 36vw;
+    height:100vh;
+    overflow:scroll;
+    word-wrap: break-word;
+    
+    text-transform:lowercase;
+    font-family:waxwing;
+    -webkit-text-stroke: 1px #00ff64;
+    font-size:5vw;
+    position: relative;
+    z-index:1;
+    scrollbar-width: none;
+}
+
+#scroll::-webkit-scrollbar {
+    display: none;
+}
+
+
+#scroll:hover {
+    color:#00ff64;
+    z-index:5;
+    transition: 0.5s;
+}
+
+#scroll:hover ~ .pair-box {
+    background-image: none !important;
+    background-color: transparent !important;
+    text-shadow: none !important;
+    border-color:#00ff64 !important;
+    
+}
+
+#scroll2 {
+    color: transparent;
+    left:5vw;
+    width: 36vw;
+    height:100vh;
+    overflow:scroll;
+    word-wrap: break-word;
+    
+    text-transform:lowercase;
+    font-family:waxwing;
+    -webkit-text-stroke: 1px #00ff64;
+    font-size:5vw;
+    position: relative;
+    z-index:1;
+    scrollbar-width: none;
+}
+
+#scroll2::-webkit-scrollbar {
+    display: none;
+}
+
+
+#scroll2:hover {
+    color:#00ff64;
+    z-index:5;
+    transition: 0.5s;
+}
+
+#scroll2:hover ~ .pair-box {
+    background-image: none !important;
+    background-color: transparent !important;
+    text-shadow: none !important;
+    border-color:#00ff64 !important;
+    
+}
+
+#scroll3:hover {
+    color:#00ff64;
+    z-index:5;
+    transition: 0.5s;
+}
+
+#scroll3:hover ~ .pair-box {
+    background-image: none !important;
+    background-color: transparent !important;
+    text-shadow: none !important;
+    border-color:#00ff64 !important;
+    
+}
+
+#scroll3 {
+    color: transparent;
+    left:24vw;
+    width: 36vw;
+    height:100vh;
+    overflow:scroll;
+    word-wrap: break-word;
+    
+    text-transform:lowercase;
+    font-family:waxwing;
+    /* color:#00ff64; */
+    -webkit-text-stroke: 1px #00ff64;
+    font-size:5vw;
+    position: relative;
+    z-index:1;
+    scrollbar-width: none;
+}
+
+#scroll3::-webkit-scrollbar {
+    display: none;
+}
+
+
+#scroll3:hover {
+    color:#00ff64;
+    z-index:5;
+    transition: 0.5s;
+}
+
+#scroll3:hover ~ .pair-box {
+    background-image: none !important;
+    background-color: transparent !important;
+    text-shadow: none !important;
+    border-color:#00ff64 !important;
+    
+}
+
+
+.override-word {
+    color: #00ff64;
+}
+
+
+#mm1-1 {
+    top: 2vh;
+    left: 7vw;
+    width: 12vw;
+    height: 22vh;
+}
+
+#mm1-2 {
+    top: 20vh;
+    left: 6vw;
+    width: 17vw;
+    height: 25vh;
+}
+
+#mm1-3 {
+    top: 53vh;
+    left: 10vw;
+    width: 12vw;
+    height: 15vh;
+}
+
+#mm1-4 {
+    bottom: 2vh;
+    left: 7vw;
+    width: 28vw;
+    height: 22vh;
+}
+
+#mm1-5 {
+    position: absolute;
+    top: 25vh;
+    left: 26vw;
+    width: 10vw;
+    height: 34vh;
+}
+
+#mm1-6 {
+    top: 62vh;
+    left: 29vw;
+    width: 5vw;
+    height: 14vh;
+}
+
+#mm1-7 {
+    top: 7.5vh;
+    left: 53.5vw;
+    width: 10vw;
+    height: 20vh;
+}
+
+#mm1-8 {
+    top: 34vh;
+    left: 37.5vw;
+    width: 36vw;
+    height: 34vh;
+}
+
+#mm1-9 {
+    top:5vh;
+    right:6vw;
+    width:23vw;
+    height:55vh;
+}
+
+#mm1-10 {
+    bottom:4vh;
+    right:20.5vw;
+    width: 8vw;
+    height:30vh;
+}
+
+#mm1-11 {
+    bottom:10vh;
+    right:8vw;
+    width:9vw;
+    height:14vh;
+
+}
+
+#mm2-1 {
+    top:3vh;
+    left:7vw;
+    width:28vw;
+    height:20vh;
+}
+
+#mm2-2 {
+    top:18vh;
+    left:24vw;
+    width:21vw;
+    height:28vh;
+}
+
+#mm2-3 {
+    top:58vh;
+    left:8vw;
+    width:15vw;
+    height:18vh;
+}
+
+#mm2-4 {
+    top:52vh;
+    left:24.5vw;
+    width:9vw;
+    height:36vh;
+}
+
+#mm2-5 {
+    top:50vh;
+    left:40vw;
+    width:6vw;
+    height:13vh;
+}
+
+#mm2-6 {
+    top:8vh;
+    left:50vw;
+    width:22vw;
+    height:50vh;
+}
+
+#mm2-7 {
+    top:4vh;
+    right:10vw;
+    width:16vw;
+    height:30vh;
+}
+
+#mm2-8 {
+    top:31vh;
+    right:18vw;
+    width:12vw;
+    height:22vh;
+}
+
+#mm2-9 {
+    bottom:2vh;
+    right:7vw;
+    width:28vw;
+    height:26vh;
+}
+
+#mm3-1 {
+    top: 10vh;
+    left:11vw;
+    width:9vw;
+    height: 40vh;
+}
+
+#mm3-2 {
+    top: 53vh;
+    left:7vw;
+    width:20vw;
+    height:25vh;
+}
+
+#mm3-3 {
+    top:2vh;
+    left: 22vw;
+    width:10vw;
+    height: 20vh;
+}
+
+#mm3-4 {
+    bottom:2vh;
+    left:18vw;
+    width:13vw;
+    height:24vh;
+}
+
+#mm3-5 {
+    top: 17vh;
+    left:38vw;
+    width:24vw;
+    height: 70vh;
+}
+
+#mm3-6 {
+    top:44vh;
+    left:54vw;
+    width:22vw;
+    height: 16vh;
+    width:18vw;
+    height:14vh;
+}
+
+#mm3-7 {
+    top: 64vh;
+    left:57vw;
+    width:13vw;
+    height:9vh;
+}
+
+#mm3-8 {
+    top:5vh;
+    right:8vw;
+    width:28vw;
+    height:32vh;
+}
+
+#mm3-9 {
+    top: 60vh;
+    right: 13vw;
+    width:5vw;
+    height:11vh;
+}
+
+#mm3-10 {
+    bottom:5vh;
+    right: 6.5vw;
+    width:24vw;
+    height:18vh;
+}
+
+#landing-pic {
+    margin: auto;
+    position: relative;
+
+    width: 11.8vw;
+    height: 12.5vh;
+    background-image: url("/memorymachine/mm-landing.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+    top: 20vh;
+    z-index: 1;
+
+}
+
+#landing-pic:hover {
+    transform: scale(1.03, 1.03);
+    transition: transform 0.5s ease;
+}
+
+#landing-title {
+
+
+    margin: auto;
+    border: 1px solid #00ff64;
+    width: 14vw;
+    height: 17vh;
+
+    font-family: Waxwing;
+    color: #00ff64;
+    font-size: 1.7vw;
+    letter-spacing: -0.2vw;
+    text-align: justify;
+    text-align-last: center;
+
+    line-height: 17vh;
+
+    position: relative;
+    z-index: 2;
+    top: 15vh;
+}
+
+#landing-title:hover {
+    transform: scale(1.03, 1.03);
+    transition: transform 0.5s ease;
+}
+
+#landing-quote {
+    margin: auto;
+    border: 1px solid #00ff64;
+    width: 38vw;
+    height: 36vh;
+    font-family: Waxwing;
+    color: #00ff64;
+    font-size: 1.7vw;
+    letter-spacing: -0.1vw;
+    word-spacing: -.4vw;
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 0.2vw;
+    text-align-last: center;
+    text-transform: uppercase;
+    line-height: 4vh;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    z-index: 2;
+    top: 12vh;
+
+}
+
+#landing-quote:hover {
+    transform: scale(1.03, 1.03);
+    transition: transform 0.5s ease;
+
+}
