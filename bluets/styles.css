@@ -245,35 +245,6 @@ button:hover {
     transition: 0.25s ease;
 }
 
-/* .header:hover #index_btn {
-    background:blue;
-    color: #b5c3eb;
-    transition: 0.25s ease;
-    border: 1px solid #b5c3eb;
-} */
-
-/* .header:hover a {
-    color:#b5c3eb;
-    transition: 0.25s ease;
-} */
-/* #index_btn:hover {
-    color: #b5c3eb;
-    transition: 0.25s ease;
-    border: 1px solid #b5c3eb;
-} */
-
-/* a:hover #index_btn {
-    background:#b5c3eb;
-    color:blue;
-    border: 1px solid blue;
-    transition: 0.25s ease;
-} */
-
-
-#hide_btn {
-    opacity:0%;
-}
-
 #og_text_0 {
     display:block;
 }
